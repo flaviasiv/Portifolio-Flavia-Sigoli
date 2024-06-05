@@ -291,6 +291,9 @@ header {
     height: 100%;
     margin: auto;
 }
+.imgprofile {
+    border-radius: 30px;
+}
 .introtext p svg{display: none;}
 @media screen and (max-width:1250px) {
     .videop img{
@@ -435,7 +438,7 @@ header {
 swiper-container.mySwiper2 {
   width: 100%;
   max-width: 9999px;
-  height: 670px;
+  height: 550px;
   cursor: pointer;
   margin: 0 auto !important;
 }

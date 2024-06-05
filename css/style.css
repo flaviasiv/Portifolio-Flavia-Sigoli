@@ -248,7 +248,7 @@ header {
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    background-color:#000;
+    background-color:#1a1a1a;
     max-height: 800px;
 }
 .videoimg video{
@@ -328,7 +328,7 @@ header {
     }
 }
 .bg-grad{
-    background: linear-gradient(#000 0%, #333 100%);
+    background: linear-gradient(#1a1a1a 0%, #3b3b3b 100%);
 }
 .aboutcontainer{
     position: relative;
@@ -398,7 +398,7 @@ header {
     margin: auto;
     padding: 70px 0px;
     height: auto;
-    background: linear-gradient(#333 0%, #000 100%);
+    background: linear-gradient(#3b3b3b 0%, #1a1a1a 100%);
 }
 .portifolio{
     width: 100%;
@@ -536,7 +536,7 @@ footer{
     max-width: 9999px;
     margin: auto;
     height: auto;
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
 }
 .footergrid{
@@ -626,7 +626,7 @@ footer{
     max-width: 9999px;
     margin: auto;
     padding: 34px 0;
-    background-color: #000;
+    background-color: #1a1a1a;
     align-items: center;
     text-align: center;
     border-top: 1px solid #fff;

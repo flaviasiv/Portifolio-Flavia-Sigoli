@@ -236,10 +236,16 @@ header {
   text-align: right;
   }   
 }
-.goldsvg{
-    width: 62px;
+.container{
+    padding-top: 40px;
+}
+.border{
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
-    margin-top: 16px;
+    border: 3px solid #3e3e3e;
+    border-radius: 30px;
+    box-shadow: 6px -6px #3b3b3b;
 }
 .introcontainer{
     position: relative;
@@ -249,13 +255,11 @@ header {
     max-width: 9999px;
     margin: auto;
     background-color:#1a1a1a;
-    max-height: 800px;
+    padding-top: 120px;
+    height: 800px;
 }
-.videoimg video{
-    display: block;
-    max-height: 800px;
-    width: 100%;
-    object-fit: cover;
+.intro{
+    height: 800px;
 }
 .introtext{
     display: flex;
@@ -293,6 +297,13 @@ header {
 }
 .imgprofile {
     border-radius: 30px;
+    margin-left: 5px;
+}
+.imgprofile:hover {
+    max-width: 465px;
+    margin: auto;
+    margin-left: -10px;
+    transition: all 0.5s ease-in-out;
 }
 .introtext p svg{display: none;}
 @media screen and (max-width:1250px) {
@@ -341,19 +352,19 @@ header {
     position: relative;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: auto;
-    padding:90px 0 70px 0;
+    padding:50px 0;
     color: #FFF;
     font-family: 'Urbanist';
 }
-.abouttext{ 
+.abouttext, .skillstext{
     display: flex;
     flex-direction: column; 
     text-align: center;
     margin: auto;
 }
-.abouttext h2{
+.abouttext h2, .skillstext h2{
     display: flex;
     flex-direction: column;
     font-size: 32px;
@@ -392,6 +403,46 @@ header {
         font-size: 14px;
     }
 }
+:root {
+    --swiper-navigation-color: #eee;
+    --swiper-pagination-color: #fff;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+}
+swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.skillslist{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 30px;
+}
+.mySwiper1{
+    display: flex;
+    width: 1400px;
+    margin: auto;
+}
+.mySwiper1 swiper-slide{
+    width: 300px;
+    padding-bottom: 30px;
+    cursor: grab;
+}
+.skill{
+    display: flex;
+    max-width: 200px;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+}
+.skill img{
+    max-width: 200px;
+}
+.jslogo{
+    padding: 15px;
+}
 .portifoliocontainer{
     width: 100%;
     max-width: 9999px;
@@ -399,11 +450,6 @@ header {
     padding: 70px 0px;
     height: auto;
     background: linear-gradient(#3b3b3b 0%, #1a1a1a 100%);
-}
-.portifolio{
-    width: 100%;
-    max-width: 9999px;
-    margin: auto;
 }
 .portifoliotitle{
     font-family: 'Urbanist', sans-serif;
@@ -438,7 +484,7 @@ header {
 swiper-container.mySwiper2 {
   width: 100%;
   max-width: 9999px;
-  height: 550px;
+  height: 370px;
   cursor: pointer;
   margin: 0 auto !important;
 }
@@ -542,7 +588,7 @@ footer{
 .footergrid{
     display: flex;
     width: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     margin: auto;
     justify-content: space-between;
     padding: 50px;
@@ -551,7 +597,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     gap: 15px;
 }
 .footermenu1{
@@ -590,19 +636,22 @@ footer{
     width: auto;
 }
 .footerimglogo img{
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: auto;
     width: 150px;
 }
 .footersocials{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     line-height: 130%;
     width: auto;
     margin: 0 auto;
 }
 .footersocials p{
     font-size: 16px;
+    text-align: center;
     font-style: normal;
     font-weight: 600;
     line-height: 160%; /* 25.6px */
@@ -612,6 +661,15 @@ footer{
     display: flex;
     gap: 10px;
     padding-top: 10px;
+}
+.footersocials ul li img {
+    width: 35px;
+    margin: 4px;
+}
+.footersocials ul li img:hover {
+    width: 39px;
+    margin: 2px;
+    transition: all 0.5s ease-in-out;
 }
 .footersocials h6, .footersocials h5{
     font-size: 16px;

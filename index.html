@@ -37,42 +37,28 @@
                 <li><a href="#about"> About </a></li>
                 <li><a href="#skills"> Skills </a></li>
                 <li><a href="#portfolio"> Portfolio </a></li>
-                <li><a href="#faq"> Contact </a></li>
+                <li><a href="#footer"> Contact </a></li>
               </ul>
             </div>
-            <!-- <div class="menusocial">
-              <ul>
-                <li class="socialgettouch" style="text-decoration:none;">
-                  <a href="#contact">Contact us </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/jncleaningoh/"target="_blank">                    
-                  <img src="./assets/igVector.svg" alt="" draggable="false">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/profile.php?id=61551250801505&notif_id=1714429619047341&notif_t=profile_plus_admin_invite&ref=notif" target="_blank">
-                  <img src="./assets/fbVector.svg" alt=""draggable="false">                   
-                  </a>
-                </li>
-              </ul>
-            </div> -->
           </div>
       </nav>
     </div>
   </header>
     <main>
-        <div class="introcontainer">
-          <div class="videoimg"><video autoplay muted loop playsinline src="./assets/jnnunes.mp4"></video></div>
-            <div class="introtext">
-              <img class="imglogo" src="./assets/Component8.png" alt="" draggable="false">
-              <img class="imgprofile" src="https://avatars.githubusercontent.com/u/108763305?v=4" alt="" draggable="false">
-            </div>
+        <div class="introcontainer container">
+          <div class="intro border">
+            <!-- <div class="videoimg">
+              <video autoplay muted loop playsinline src="./assets/jnnunes.  mp4"></video>
+            </div> -->
+              <div class="introtext">
+                <img class="imglogo" src="./assets/Component8.png" alt="" draggable="false">
+                <img class="imgprofile" src="https://avatars.githubusercontent.com/u/108763305?v=4" alt="" draggable="false">
+              </div>
           </div>
         </div>
         <div class="bg-grad">
-        <div class="aboutcontainer">
-          <div class="about" id="about">
+        <div class="aboutcontainer container">
+          <div class="about border" id="about">
             <div class="abouttext">
               <h2 class="reveal">About me</h2>
               <p class="reveal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt exercitationem enim a tempora perspiciatis blanditiis suscipit itaque nostrum soluta iste, maxime veritatis nisi, tenetur fugit. Labore praesentium blanditiis repellat!
@@ -83,67 +69,138 @@
             </div>
           </div>
         </div>
-        <div class="skillscontainer">
-          <div class="about skills" id="skills">
-            <div class="abouttext skillstext">
-              <h2 class="reveal">My Skills:</h2>
-              <p class="reveal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt exercitationem enim a tempora perspiciatis blanditiis suscipit itaque nostrum soluta iste, maxime veritatis nisi, tenetur fugit. Labore praesentium blanditiis repellat!
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt exercitationem enim a tempora perspiciatis blanditiis suscipit itaque nostrum soluta iste, maxime veritatis nisi, tenetur fugit. Labore praesentium blanditiis repellat!
-                <br><br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sunt exercitationem enim a tempora perspiciatis blanditiis suscipit itaque nostrum soluta iste, maxime veritatis nisi, tenetur fugit. Labore praesentium blanditiis repellat!.</p>
+        <div class="skillscontainer container">
+          <div class="about skills border" id="skills">
+            <div class="skillstext">
+              <h2 class="reveal">My Skills</h2>
+              <div class="skillslist">
+                <swiper-container class="mySwiper1 reveal" pagination="true" pagination-clickable="true" space-between="0" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="2000">
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>HTML</p>
+                      <img src="./assets/html-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>CSS</p>
+                      <img src="./assets/css-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>JavaScript</p>
+                      <img class="jslogo" src="./assets/JavaScript-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>Git</p>
+                      <img src="./assets/git-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>ReactJS</p>
+                      <img src="./assets/React-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide>
+                    <div class="skill">
+                      <p>Figma</p>
+                      <img src="./assets/Figma-logo.svg" alt="">
+                    </div>
+                  </swiper-slide>
+              </swiper-container>
+              </div>
             </div>
           </div>
         </div>
       </div>
-        <div class="portifoliocontainer" id="portfolio">
-          <div class="portifolio">
-            <div class="portifoliotitle">
+        <div class="portifoliocontainer container" id="portfolio">
+          <div class="portifolio border" style="color:#fff;padding:50px 0;">
+            <div class="abouttext">
                 <h2>Portfolio</h2> <br>
             </div>
-            <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="20" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000">
+            <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="20" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="7000">
                <swiper-slide class="swiper2">
                 <a href="https://github.com/flaviasiv/paloma-siqueira" target="_blank">
                 <div class=" portifoliocard">
-                  <img src="./assets/read-paloma.png" alt="" draggable="false">
+                  <img src="./assets/paloma-work.png" alt="" draggable="false">
                 </div></a>
               </swiper-slide> 
+              <swiper-slide class="swiper2">
+                <a href="https://github.com/flaviasiv/Lucas-Moraes" target="_blank">
+                <div class="">
+                  <img src="./assets/lucas-work.png" alt="" draggable="false">
+                </div></a>
+              </swiper-slide>
               <swiper-slide class="swiper2">
                 <a href="https://github.com/flaviasiv/special-concrete" target="_blank">
                 <div class="">
-                  <img src="./assets/read-special.png" alt="" draggable="false">
-                </div></a>
-              </swiper-slide>
-              <swiper-slide class="swiper2">
-                <a href="https://github.com/flaviasiv" target="_blank">
-                <div class="">
-                  <img src="./assets/read-paloma.png" alt="" draggable="false">
+                  <img src="./assets/special-work.png" alt="" draggable="false">
                 </div></a>
               </swiper-slide>
                <swiper-slide class="swiper2">
-                <a href="https://github.com/flaviasiv" target="_blank">
+                <a href="https://github.com/flaviasiv/DayanesCleaning" target="_blank">
                 <div class="">
-                  <img src="./assets/read-paloma.png" alt="" draggable="false">
+                  <img src="./assets/dayanes-work.png" alt="" draggable="false">
                 </div></a>
               </swiper-slide> 
               <swiper-slide class="swiper2">
-                <a href="https://github.com/flaviasiv" target="_blank">
+                <a href="https://github.com/flaviasiv/Dreams-Clean" target="_blank">
                <div class="">
-                 <img src="./assets/read-paloma.png" alt="" draggable="false">
+                 <img src="./assets/dreams-work.png" alt="" draggable="false">
                </div></a>
              </swiper-slide> 
               <swiper-slide class="swiper2">
-                <a href="https://github.com/flaviasiv" target="_blank">
+                <a href="https://github.com/flaviasiv/JNNunes" target="_blank">
                <div class="">
-                 <img src="./assets/read-paloma.png" alt="" draggable="false">
+                 <img src="./assets/jnnunes-work.png" alt="" draggable="false">
                </div></a>
              </swiper-slide> 
+             <swiper-slide class="swiper2">
+               <a href="https://github.com/flaviasiv/MMK" target="_blank">
+              <div class="">
+                <img src="./assets/mmk-work.png" alt="" draggable="false">
+              </div></a>
+            </swiper-slide> 
+            <swiper-slide class="swiper2">
+              <a href="https://github.com/flaviasiv/Melanie" target="_blank">
+             <div class="">
+               <img src="./assets/melanie-work.png" alt="" draggable="false">
+             </div></a>
+           </swiper-slide> 
+           <swiper-slide class="swiper2">
+             <a href="https://github.com/flaviasiv/Maximum" target="_blank">
+            <div class="">
+              <img src="./assets/max-work.png" alt="" draggable="false">
+            </div></a>
+          </swiper-slide> 
+          <swiper-slide class="swiper2">
+            <a href="https://github.com/flaviasiv/HRS-LP" target="_blank">
+           <div class="">
+             <img src="./assets/hrs-work.png" alt="" draggable="false">
+           </div></a>
+         </swiper-slide> 
+         <swiper-slide class="swiper2">
+           <a href="https://github.com/flaviasiv/6th-avenue" target="_blank">
+          <div class="">
+            <img src="./assets/6th-work.png" alt="" draggable="false">
+          </div></a>
+        </swiper-slide> 
+        <swiper-slide class="swiper2">
+          <a href="https://github.com/flaviasiv/Orlandis" target="_blank">
+         <div class="">
+           <img src="./assets/orlandis-work.png" alt="" draggable="false">
+         </div></a>
+       </swiper-slide> 
             </swiper-container>            
           </div>
         </div>
     </main>
     <footer>
-      <div class="footergrid">
+      <div class="footergrid" id="footer">
         <div class="footerimglogo">
           <img src="./assets/Component8.png" alt="" draggable="false">
         </div>
@@ -162,12 +219,12 @@
           <ul>
             <li>
               <a href="https://www.instagram.com/flaviasig_/"target="_blank">                    
-              <img src="./assets/1.png" alt="" draggable="false">
+              <img src="./assets/igfooter.svg" alt="" draggable="false">
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61551250801505&notif_id=1714429619047341&notif_t=profile_plus_admin_invite&ref=notif" target="_blank">
-              <img src="./assets/1.png" alt=""draggable="false">                   
+              <a href="https://web.facebook.com/flavia.sigoli/" target="_blank">
+              <img src="./assets/fbfooter.svg" alt=""draggable="false">                   
               </a>
             </li>
           </ul>
@@ -176,7 +233,7 @@
       </div>
       <div class="rights"><p>© 2024 Flavia Sigoli. All rights reserved.</p></div>    
     </footer>
-    <script src="./js/javascrip.js"></script>
+    <script src="./js/javascript.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>

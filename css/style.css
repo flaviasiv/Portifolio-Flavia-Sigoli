@@ -239,7 +239,8 @@ header {
     margin: auto;
     border: 3px solid #3e3e3e;
     border-radius: 30px;
-    box-shadow: 8px 8px 5px 0px #A442DC
+    border-bottom: 8px solid #A442DC;
+    border-right: 8px solid #A442DC
 }
 .introcontainer{
     position: relative;
@@ -254,17 +255,29 @@ header {
 }
 .intro{
     height: 800px;
+    display: flex;
+    align-items: center;
 }
 .introtext{
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: space-between;
     width:100%;
     max-width: 1000px;
     margin: auto;
-    padding: 130px 50px 0 50px;
 }
 .introtext h2{
     color: #A442DC;
+    font-size: 30px;
+    text-align: center;
+}
+.introinfo{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 30px 0;
+    justify-content: space-between;
 }
 /* BACKGROUND VIDEO COM COR MAIS ESCURA 
 .videocontainer:before {
@@ -282,24 +295,19 @@ header {
   background-size: cover;
 }*/
 .imglogo{
-    width: 350px;
-    margin: auto;
+    width: 400px;
 }
 .imgprofile {
-    width: 100%;
-    max-width: 450px;
+    width: 400px;
     height: 100%;
     margin: auto;
     border-radius: 30px;
-    margin-left: 5px;
 }
 .imgprofile:hover {
     max-width: 465px;
     margin: auto;
-    margin-left: -10px;
     transition: all 0.5s ease-in-out;
 }
-.introtext p svg{display: none;}
 @media screen and (max-width:1250px) {
     .videop img{
         max-width: 290px;
@@ -365,13 +373,38 @@ header {
     font-weight: 600;
 }
 .abouttext p{
-    max-width: 590px;
-    font-size: 16px;
+    max-width: 850px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
     margin: auto;
     margin-top: 36px;
+}
+.downloadcv button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 8px 3px;
+    text-decoration: none;
+    border-radius: 32px;
+    background-color: #A442DC;
+    list-style: none;
+    width: 170px;
+    border: none;
+}
+.downloadcv img{
+    max-width: 25px;
+}
+.downloadcv button a{
+    display: flex;
+    width: 125px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.6;
+    color: #FFF;
 }
 /* .reveal{
     position: relative;

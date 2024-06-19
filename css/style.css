@@ -357,7 +357,6 @@ header {
     max-width: 1400px;
     margin: auto;
     padding:50px 0;
-    color: #FFF;
     font-family: 'Urbanist';
 }
 .abouttext, .skillstext{
@@ -365,6 +364,7 @@ header {
     flex-direction: column; 
     text-align: center;
     margin: auto;
+    color: #FFF;
 }
 .abouttext h2, .skillstext h2{
     display: flex;
@@ -380,6 +380,7 @@ header {
     line-height: 130%;
     margin: auto;
     margin-top: 36px;
+    color: #DADADA;
 }
 .downloadcv button{
     display: flex;
@@ -471,6 +472,7 @@ swiper-container{
     font-weight: 600;
     letter-spacing: 1;
     margin-bottom: 5px;
+    color: #DADADA;
 }
 .skill img{
     width: 200px;
@@ -515,7 +517,49 @@ swiper-container{
     line-height: 130%; 
     margin-bottom: 50px;
 }
+.portifoliogrid{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    color: #DADADA;
+}
 
+.portifoliohead, .portfolioinfos{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.btn1{
+    color: #A442DC;
+    background-color: #3b3b3b;
+    border: none;
+    width: 162px;
+    border: 2px solid #A442DC;
+    cursor: pointer;
+    border-radius: 32px;
+}
+.btn-h button:last-child{
+    border: 2px solid #B4FF90;
+    color: #B4FF90;
+    margin-left: 15px;
+}
+.btn1 img{
+    margin-right: 10px;
+}
+.btn1 a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+.portfolioinfos p{
+    max-width: 500px;
+}
+.porfitolioimg img{
+    width: 100%;
+}
+/* 
 swiper-container.mySwiper2 {
   width: 100%;
   max-width: 9999px;
@@ -556,7 +600,7 @@ swiper-slide.swiper2 {
   max-width: 450px !important;
   margin: auto;
 }
-}
+} */
 .bgs-web{
     display: block;
     pointer-events: none;

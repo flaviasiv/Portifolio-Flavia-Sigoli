@@ -104,7 +104,7 @@ header {
   letter-spacing: 1.2px;
 } 
 .btn-toggle{display: none;}
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     .nonebar{display: none;}
   .box{
     width: fit-content;
@@ -233,6 +233,16 @@ header {
 .container{
     padding-top: 40px;
 }
+@media screen and (max-width:1500px) {
+    .container{
+        padding: 40px 50px 0 50px;
+    }
+}
+@media screen and (max-width:900px) {
+    .container{
+        padding: 40px 20px 0 20px;
+    }
+}
 .border{
     width: 100%;
     max-width: 1400px;
@@ -308,31 +318,26 @@ header {
     margin: auto;
     transition: all 0.5s ease-in-out;
 }
-@media screen and (max-width:1250px) {
-    .videop img{
-        max-width: 290px;
-        width: 100%;
-        height: 100%;
-        margin: auto;
+@media screen and (max-width:1150px) {
+    .intro{
+        padding: 0 20px;
     }
 }
-@media screen and (max-width:1080px) {
-    .videocontainer{
-        max-height: 900px;
+@media screen and (max-width:950px) {
+    .intro, .introcontainer{
+        height: 1000px;
     }
-    .videop img{
-        max-width: 170px;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        margin-bottom: 8px;
-    }
-    .videop{
+    .introtext{
         flex-direction: column;
-        padding: 0;
-        top: 47%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    }
+    .imglogo{
+        width: 300px;
+    }
+    .imgprofile {
+        width: 300px;
+    }
+    .imgprofile:hover {
+        max-width: 300px;
     }
 }
 .bg-grad{
@@ -413,17 +418,12 @@ header {
     opacity: 1;
 } */
 @media screen and (max-width:1100px) {
-    .about{
-        padding:0 20px;
-        flex-direction: column;
-    }
-    .abouttext{ 
-        max-width: 900px;
-        margin: auto;
-        margin-top: 0px;
+    .abouttext{
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .abouttext p{
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 :root {
@@ -474,15 +474,30 @@ swiper-container{
 }
 .skill img{
     width: 140px;
+    margin: auto;
 }
 .jslogo{
     padding: 16px;
+}
+@media screen and (max-width:1100px) {
+    .skillslist{
+        flex: wrap;
+        flex-flow: row wrap;
+    }
+    .skills{
+        padding: 50px 20px;
+    }
+    .skill img{
+        width: 100px;
+    }
+    .skill p{
+        font-size: 14px;
+    }
 }
 .portifoliocontainer{
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    padding: 70px 0px;
     height: auto;
     background: linear-gradient(#3b3b3b 0%, #1a1a1a 100%);
 }
@@ -530,7 +545,7 @@ swiper-container{
     border: 2px solid #DADADA;
     padding: 8px 0px;
     border-radius: 32px;
-    margin-right: 8px;
+    margin-right: 4px;
     margin-left: 2px;
 }
 .btns button:last-child{
@@ -543,6 +558,21 @@ swiper-container{
 }
 .porfitolioimg img{
     width: 100%;
+}
+@media screen and (max-width:900px) {
+    .portifoliohead, .portfolioinfos{
+        flex-direction: column;
+    }
+    .btn-h{
+        margin-top: 20px;
+    }
+    .btn-h button:last-child{
+        margin-left: 5px;
+    }
+    .btns{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 /* 
 swiper-container.mySwiper2 {
@@ -586,60 +616,6 @@ swiper-slide.swiper2 {
   margin: auto;
 }
 } */
-.bgs-web{
-    display: block;
-    pointer-events: none;
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    max-width: 9999px;
-    max-height: 100%;
-    flex-shrink: 0;
-    z-index: 0;
-}
-.bgs-mob{display: none;}
-.formgrid{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    max-width: 9999px;
-    margin: auto;
-    max-height: 1100px;
-    margin: auto;
-    padding: 0px 0;
-    z-index: 9999;
-}
-.forminfos{
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    color: #FFF;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 50px 0;
-}
-.forminfos .logofooter{
-    width:290px;
-    margin-bottom: 50px;
-}
-@media screen and (max-width:1070px) {
-    .formgrid{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-        max-width: 9999px;
-        margin: auto;
-        height: 1000px;
-        margin: auto;
-        max-height: 1070px;
-    }
-}
 footer{
     position: relative;
     width: 100%;
@@ -723,7 +699,7 @@ footer{
 .footersocials ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     padding-top: 10px;
 }
 .footersocials ul li img {
@@ -809,7 +785,6 @@ footer{
         margin-bottom: 10px;
     }
 }
-
 a{
     text-decoration: none;
     color: inherit;

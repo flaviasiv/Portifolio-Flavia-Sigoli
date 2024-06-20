@@ -486,50 +486,21 @@ swiper-container{
     height: auto;
     background: linear-gradient(#3b3b3b 0%, #1a1a1a 100%);
 }
-.portifoliotitle{
-    font-family: 'Urbanist', sans-serif;
-    color: #fff
-}
-.portifoliocontainer .portifoliotitle h2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 60px;
-}
-.portifoliotitle h2 svg{
-    margin-top: 16px;
-}
-.portifoliotitle p{
-    display: block;
-    max-width: 447px;
-    text-align: center;
-    margin: auto;
-    font-size:16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; 
-    margin-bottom: 50px;
-}
 .portifoliogrid{
     width: 100%;
     max-width: 1400px;
     margin: auto;
     color: #DADADA;
 }
-
 .portifoliohead, .portfolioinfos{
+    letter-spacing: 1;
     display: flex;
     justify-content: space-between;
     padding: 40px 0;
 }
 .btn1{
     color: #A442DC;
-    background-color: #3b3b3b;
+    background-color: transparent;
     border: none;
     width: 162px;
     border: 2px solid #A442DC;
@@ -551,8 +522,24 @@ swiper-container{
     padding: 8px 0px;
     cursor: pointer;
 }
+.btns button{
+    color: #DADADA;
+    background-color: transparent;
+    border: none;
+    width: 112px;
+    border: 2px solid #DADADA;
+    padding: 8px 0px;
+    border-radius: 32px;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+.btns button:last-child{
+    margin-right: 0;
+}
 .portfolioinfos p{
     max-width: 500px;
+    font-size: 16px;
+    line-height: 120%;
 }
 .porfitolioimg img{
     width: 100%;
@@ -740,12 +727,12 @@ footer{
     padding-top: 10px;
 }
 .footersocials ul li img {
-    width: 35px;
-    margin: 4px;
+    width: 40px;
+    margin: 2px;
 }
 .footersocials ul li img:hover {
-    width: 39px;
-    margin: 2px;
+    width: 44px;
+    margin: 0px;
     transition: all 0.5s ease-in-out;
 }
 .footersocials h6, .footersocials h5{

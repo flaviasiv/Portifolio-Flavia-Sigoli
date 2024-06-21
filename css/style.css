@@ -246,6 +246,9 @@ header {
   flex-direction:column;
   text-align: right;
   }   
+  .langchange img{
+    width: 45px;
+  }
 }
 .container{
     padding-top: 40px;

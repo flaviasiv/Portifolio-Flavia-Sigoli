@@ -110,8 +110,7 @@ header {
 }
 .langchange img{
     width: 100%;
-    max-width: 90px;
-    height: 100%;
+    max-width: 60px;
     border-radius: 50%;
 }
 .menu-linksbtn a:hover,
@@ -545,6 +544,7 @@ swiper-container{
     border: 2px solid #B4FF90;
     color: #B4FF90;
     margin-left: 15px;
+    width: 199px;
 }
 .btn1 img{
     margin-right: 10px;
@@ -553,7 +553,7 @@ swiper-container{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 8px 0px;
+    padding: 8px 4px;
     cursor: pointer;
 }
 .btns button{
@@ -592,6 +592,16 @@ swiper-container{
     .btns{
         margin-bottom: 20px;
         margin-right: 0;
+    }
+    .btns button{
+        width: 108px;
+    }
+    .btn1{
+        width: 152px;
+        font-size: 12px;
+    }
+    .btn-h button:last-child{
+        width: 189px;
     }
 }
 

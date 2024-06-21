@@ -343,13 +343,20 @@ header {
 }
 @media screen and (max-width:950px) {
     .intro, .introcontainer{
-        height: 1000px;
+        height: 900px;
+    }
+    .introcontainer{
+        padding-top: 80px;
     }
     .introtext{
         flex-direction: column;
     }
+    .introinfo{
+        height: 350px;
+    }
     .imglogo{
-        width: 300px;
+        width: 270px;
+        margin: auto;
     }
     .imgprofile {
         width: 300px;
@@ -501,6 +508,7 @@ swiper-container{
     .skillslist{
         flex: wrap;
         flex-flow: row wrap;
+        row-gap: 25px;
     }
     .skills{
         padding: 50px 20px;

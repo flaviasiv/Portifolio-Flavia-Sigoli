@@ -404,6 +404,7 @@ header {
     font-size: 32px;
     font-weight: 600;
 }
+/*
 .abouttext p{
     max-width: 850px;
     font-size: 22px;
@@ -438,8 +439,7 @@ header {
     font-size: 14px;
     letter-spacing: 0.6;
     color: #FFF;
-}
-/* .reveal{
+} .reveal{
     position: relative;
     transform: translateX(-150%);
     opacity: 0;
@@ -510,6 +510,28 @@ swiper-container{
 }
 .jslogo{
     padding: 16px;
+}
+.skillen-set{
+    color: #DADADA;
+    max-width: 400px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skillen-set h3{
+    padding: 30px 0;
+}
+.set a{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+.skillen-set .set img{
+    width:180px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 @media screen and (max-width:1100px) {
     .skillslist{

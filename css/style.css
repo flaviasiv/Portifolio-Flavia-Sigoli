@@ -404,7 +404,7 @@ header {
     font-size: 32px;
     font-weight: 600;
 }
-/*
+
 .abouttext p{
     max-width: 850px;
     font-size: 22px;
@@ -415,7 +415,7 @@ header {
     margin-top: 36px;
     color: #DADADA;
 }
-.downloadcv button{
+/*.downloadcv button{
     display: flex;
     justify-content: center;
     margin: auto;

@@ -70,6 +70,7 @@ header {
 }
 .menu-linksbtn{
     display: flex;
+    gap: 10px;
 }
 .menu-linksbtn ul{
     list-style: none;
@@ -105,7 +106,6 @@ header {
     display: flex;
     position: relative;    
     gap: 10px;
-    margin-left: 20px;
 }
 .langchange button{
     border-radius: 50%;
@@ -123,8 +123,7 @@ header {
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
     color: #a442dcd2;
-  transition: 0.5s ease-in-out;
-  letter-spacing: 1.2px;
+  transition: 0.2s ease-in-out;
 } 
 .btn-toggle{display: none;}
 @media only screen and (max-width: 1000px) {
@@ -315,21 +314,6 @@ header {
     padding: 30px 0;
     justify-content: space-between;
 }
-/* BACKGROUND VIDEO COM COR MAIS ESCURA 
-.videocontainer:before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.6;
-  background-color: #000;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
-}*/
 .imglogo{
     width: 400px;
 }
@@ -479,16 +463,6 @@ swiper-container{
     margin: auto;
     padding-top: 30px;
 }
-/* .mySwiper1{
-    display: flex;
-    width: 1400px;
-    margin: auto;
-}
-.mySwiper1 swiper-slide{
-    width: 300px;
-    padding-bottom: 30px;
-    cursor: grab;
-} */
 .skill{
     display: flex;
     max-width: 200px;
@@ -577,6 +551,10 @@ swiper-container{
     cursor: pointer;
     border-radius: 32px;
 }
+.btn1:hover{
+    opacity: 0.7;
+    transition: 0.3s all;
+}
 .btn-h button:last-child{
     border: 2px solid #B4FF90;
     color: #B4FF90;
@@ -644,58 +622,31 @@ swiper-container{
 
 .contactcontainer{
     position: relative;
-    text-align: center;
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2;
     padding: 50px 0;
 }
+.contactcontainer h2{
+    font-size: 46px;
+}
+.contactcontainer ul li {
+    list-style: none;
+}
+.contactcontainer ul li:before {
+  content: "✓";
+  margin-right: 10px;
+}
 .contactcontainer a{
+    font-size: 34px;
     text-decoration: underline;
 }
-/* 
-swiper-container.mySwiper2 {
-  width: 100%;
-  max-width: 9999px;
-  height: 370px;
-  cursor: pointer;
-  margin: 0 auto !important;
+.contactcontainer a:hover{
+    color: #ffffffbd;
+    transition: 0.1s all ease-in;
 }
-swiper-slide.swiper2 {
-  width: 100%;
-  max-width:610px;
-  border-radius: 30px;
-  margin-left: 0px;
-  padding-bottom: 50px;
-}
-.swiper2 img {
-  width: 100% !important;
-  max-width: 600px !important;
-  margin: auto;
-  border-radius: 25px;
-  justify-content: start;
-  object-fit: cover !important;
-  object-position: center;
-}
-@media screen and (max-width:890px) {
-.portifoliocontainer{
-    padding: 50px 0;
-}
-swiper-container.mySwiper2 {
-  height: 440px;
-  cursor: grab;
-  margin: 0 !important;
-}
-swiper-slide.swiper2 {
-  max-width: 410px;
-  margin-left: 0px;
-}
-.swiper2 img {
-  max-width: 450px !important;
-  margin: auto;
-}
-} */
+
 footer{
     position: relative;
     width: 100%;
@@ -789,7 +740,7 @@ footer{
 .footersocials ul li img:hover {
     width: 44px;
     margin: 0px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .footersocials h6, .footersocials h5{
     font-size: 16px;

@@ -286,7 +286,7 @@ header {
     display:flex;
     flex-direction: column;
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     margin: auto;
     background-color:#1a1a1a;
     padding-top: 120px;
@@ -366,7 +366,7 @@ header {
 .aboutcontainer{
     position: relative;
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     margin: auto;
 }
 .about{
@@ -529,7 +529,7 @@ swiper-container{
 }
 .portifoliocontainer{
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     margin: auto;
     height: auto;
     background: linear-gradient(#3b3b3b 0%, #1a1a1a 100%);
@@ -653,7 +653,7 @@ swiper-container{
 footer{
     position: relative;
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     margin: auto;
     height: auto;
     background-color: #1a1a1a;
@@ -755,7 +755,7 @@ footer{
     position: relative;
     height: 81px;
     width: 100%;
-    max-width: 9999px;
+    max-width: 100%;
     margin: auto;
     padding: 34px 0;
     background-color: #1a1a1a;
